@@ -13,9 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Laravel default page (deletable)
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [App\Http\Controllers\QuoteController::class, 'index']);
